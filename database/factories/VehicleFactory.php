@@ -19,8 +19,8 @@ class VehicleFactory extends Factory
         return [
             'code' =>fake()->unique()->regexify('[A-Z]{5}[0-4]{3}'),
             'plate' =>fake()->unique()->regexify('[A-Z0-9]{6}'),
-            'brand'=>fake()->word,
-            'model'=>fake()->word,
+            'brand'=>fake()->word(),
+            'model'=>fake()->word(),
         ];
     }
 }

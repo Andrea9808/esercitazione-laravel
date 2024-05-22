@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
  */
-class BranchesFactory extends Factory
+class BranchFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -21,7 +21,6 @@ class BranchesFactory extends Factory
             'address' =>fake()->streetAddress(),
             'city'=>fake()->city() ,
             'postalCode'=>fake()->postcode(),
-
         ];
     }
 }
