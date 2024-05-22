@@ -11,6 +11,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             BranchesTableSeeder :: class,
+
+            //vheicle ha la chiave esterna
             VehiclesTableSeeder :: class,
         ]);
     }
