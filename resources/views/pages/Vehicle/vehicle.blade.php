@@ -3,5 +3,5 @@
     <title>Home</title>
 @endsection
 @section('content')
-    <h1>Hello, World!</h1>
+    <h1>IO SONO L'AUTOMEZZO</h1>
 @endsection
