@@ -21,6 +21,9 @@ Route::get('/home', function () {
 Route::get('/vehicles', [VehicleController :: class, 'index'])
     ->name('Vehicle.vehicle');
 
+//show
+Route::get('/vehicles/{id}',[VehicleController::class, 'show'])
+    ->name('vehicle.show');
 
 
 

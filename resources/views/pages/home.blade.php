@@ -1,6 +1,6 @@
 @extends('layouts.main-layout')
 @section('head')
-    <title>HOme</title>
+    <title>Home</title>
 @endsection
 @section('content')
 

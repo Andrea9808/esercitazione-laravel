@@ -12,8 +12,6 @@
     <div class="container vh-100 w-100 d-flex align-items-center justify-content-center">
 
         <div class="card w-50">
-            <h4>Filiale: {{$branches->city}}</h4>
-
             <div class="row">
                 <div class="col-6">
                     <h3>Automezzi:</h3>
@@ -23,12 +21,12 @@
                     @endforeach
                 </div>
                 <div class="col-6">
+                    <h3>Filiale:</h3>
                     <h6>Codice filiale: {{$branches->code}}</h6>
                     <h6>Indirizzo: {{$branches->address}}</h6>
                     <h6>Città: {{$branches->city}}</h6>
                 </div>
             </div>
-
         </div>
     </div>
     @endsection

@@ -37,23 +37,14 @@
 
 
 
-//STYLE LINK HOME
-.link-home {
-    transition: text-decoration 0.3s ease-in-out;
-    color: black;
-    text-decoration: none;
-
-    &:hover{
-        text-decoration: underline;
-    }
-}
+//STYLE LINK
 
 .link-route{
     text-decoration: none;
 }
 
 
-//STILE CARD
+//STYLE CARD
 
 .card {
     background-color: #ffffff;
@@ -67,3 +58,17 @@
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
     }
 }
+
+
+//STYLE HOME VEHICLES
+.bg-home-vehicles{
+    background-image: url(http://www.eurovasilas.com/images/2018/09/17/lng_cut.jpg);
+    background-size: cover;
+}
+
+//STYLE HOME BRANCHES
+.bg-home-branches{
+    background-image: url(https://uilcalombardia.it/wp-content/uploads/reg-lomb-2-chius-fil.jpg);
+    background-size: cover;
+}
+
