@@ -7,6 +7,12 @@
 <div class="container-fluid bg-home-vehicles">
     <div class="container h-100 d-flex align-items-center justify-content-center flex-column">
         <h1 class="mb-5">Tutti i nostri Automezzi</h1>
+
+        {{-- ROTTA PER LA CREATE --}}
+        <a href="{{route('vehicle.create')}}">
+            <button class="btn btn-success mb-4 ">Inserisci un automezzo</button>
+        </a>
+
         <div class="row">
             @foreach ($vehicles as $vehicle)
                 <div class="col-12 col-md-6 mb-4">

@@ -25,6 +25,13 @@ Route::get('/vehicles', [VehicleController :: class, 'index'])
 Route::get('/vehicles/{id}',[VehicleController::class, 'show'])
     ->name('vehicle.show');
 
+//create
+Route::get('/create/vehicles',[VehicleController::class, 'create'])
+    ->name('vehicle.create');
+
+//store
+Route::post('/create/vehicles',[VehicleController::class, 'store'])
+    ->name('vehicle.store');
 
 
 //ROTTE PER LE FILIALI
@@ -36,3 +43,12 @@ Route::get('/branches', [BranchController :: class, 'index'])
 //show
 Route::get('/branches/{id}',[BranchController::class, 'show'])
 ->name('branch.show');
+
+//create
+Route::get('/create/branches',[BranchController::class, 'create'])
+    ->name('branch.create');
+
+//store
+Route::post('/create/branches',[BranchController::class, 'store'])
+    ->name('branch.store');
+

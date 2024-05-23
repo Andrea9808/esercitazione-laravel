@@ -5,8 +5,14 @@
 @section('content')
 
 <div class="container-fluid bg-home-branches">
+
     <div class="container h-100 d-flex align-items-center justify-content-center flex-column">
         <h1 class="mb-5">Tutte le nostre filiali</h1>
+
+        {{-- ROTTA PER LA CREATE --}}
+        <a href="{{route('branch.create')}}">
+            <button class="btn btn-success mb-4 ">Inserisci una filiale</button>
+        </a>
         <div class="row">
             @foreach ($branches as $branch)
                 <div class="col-12 col-md-6 mb-4">
