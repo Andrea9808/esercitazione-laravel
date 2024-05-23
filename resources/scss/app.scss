@@ -1,1 +1,50 @@
 @import "./bootstrap/scss/bootstrap";
+
+//STYLE FOOTER
+._footer{
+    height: 60px;
+}
+
+
+//STYLE HOME
+
+.bg-img-home {
+    background-image: url(https://www.supero.com.mt/wp-content/uploads/2015/05/azienda.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+
+    .text-home {
+        color: white;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+        animation: fadeIn 2s ease-in-out;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+//STYLE LINK HOME
+.link-home {
+    transition: text-decoration 0.3s ease-in-out;
+    color: black;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
