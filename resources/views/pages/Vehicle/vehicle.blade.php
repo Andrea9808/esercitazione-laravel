@@ -24,6 +24,8 @@
                     </a>
                 </div>
             @endforeach
+
+            {{-- ROTTA HOME --}}
             <div>
                 <a class="btn btn-info m-5" href="{{route('home')}}">Ritorna alla Home</a>
             </div>

@@ -4,32 +4,59 @@
 @endsection
 @section('content')
 
-
-<div class="container">
-    <form action="{{route('branch.store')}}" method="POST">
-
-        @csrf
-        @method('POST')
-
-        <div class="form-group">
-            <label for="code">Codice:</label>
-            <input type="text" name="code" id="code" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="address">Indirizzo:</label>
-            <input type="text" name="address" id="address" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="city">Città:</label>
-            <input type="text" name="city" id="city" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="postalCode">CAP:</label>
-            <input type="text" name="postalCode" id="postalCode" class="form-control">
-        </div>
-
-        <button type="submit" class="btn btn-success">Salva</button>
-    </form>
+@if ($errors->any())
+<div class="alert alert-danger">
+    <ul>
+        @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+         @endforeach
+    </ul>
 </div>
+@endif
+<div class="container-fluid vh-100 d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 slide-in-from-left">
+                <div class=" form-bg ">
+                    <div>
+                        <form  action="{{route('branch.store')}}" method="POST">
+
+                            @csrf
+                            @method('POST')
+
+                            <div class="form-group">
+                                <label class="label-style-create" for="code">Codice:</label>
+                                <input type="text" name="code" id="code" class="form-control" placeholder="Codice">
+                            </div>
+                            <div class="form-group">
+                                <label class="label-style-create" for="address">Indirizzo:</label>
+                                <input type="text" name="address" id="address" class="form-control" placeholder="Indirizzo">
+                            </div>
+                            <div class="form-group">
+                                <label class="label-style-create" for="city">Città:</label>
+                                <input type="text" name="city" id="city" class="form-control" placeholder="città">
+                            </div>
+                            <div class="form-group">
+                                <label class="label-style-create" for="postalCode">CAP:</label>
+                                <input type="text" name="postalCode" id="postalCode" class="form-control" placeholder="CAP">
+                            </div>
+
+                            <button type="submit" class="btn btn-success">Salva</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 my-4 slide-in-from-right">
+                <div class="title-form">
+                    <h4>Inserisci la tua filiale</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
 
 @endsection

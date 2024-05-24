@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreBranchRequest;
 
 //IMPORT FILIALI
 use App\Models\Branch;
@@ -31,7 +32,7 @@ class BranchController extends Controller
     }
 
     //STORE
-    public function store(Request $request){
+    public function store(StoreBranchRequest $request){
         $data = $request->all();
 
         $branch = new Branch();
