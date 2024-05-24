@@ -33,6 +33,10 @@ Route::get('/create/vehicles',[VehicleController::class, 'create'])
 Route::post('/create/vehicles',[VehicleController::class, 'store'])
     ->name('vehicle.store');
 
+//delete
+Route::delete('/vehicles/{id}',[VehicleController::class, 'destroy'])
+    ->name('vehicle.destroy');
+
 
 //ROTTE PER LE FILIALI
 
@@ -51,4 +55,8 @@ Route::get('/create/branches',[BranchController::class, 'create'])
 //store
 Route::post('/create/branches',[BranchController::class, 'store'])
     ->name('branch.store');
+
+//delete
+Route::delete('/branches/{id}',[BranchController::class, 'destroy'])
+    ->name('branch.destroy');
 

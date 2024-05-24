@@ -34,20 +34,29 @@ class VehicleController extends Controller
 
     //STORE
     public function store(StoreVehicleRequest $request){
-    $data = $request->all();
+        $data = $request->all();
 
-    $vehicle = new Vehicle();
-    $vehicle->code = $data['code'];
-    $vehicle->plate = $data['plate'];
-    $vehicle->brand = $data['brand'];
-    $vehicle->model = $data['model'];
+        $vehicle = new Vehicle();
+        $vehicle->code = $data['code'];
+        $vehicle->plate = $data['plate'];
+        $vehicle->brand = $data['brand'];
+        $vehicle->model = $data['model'];
 
-    $branch = Branch::find($data['branch_id']);
-    $vehicle->branch()->associate($branch);
+        $branch = Branch::find($data['branch_id']);
+        $vehicle->branch()->associate($branch);
 
 
-    $vehicle->save();
+        $vehicle->save();
 
-    return redirect()->route('Vehicle.vehicle');
+        return redirect()->route('Vehicle.vehicle');
     }
+
+
+    //DELETE
+    public function destroy($id){
+        $vehicle = Vehicle::find($id);
+        $vehicle->delete();
+        return redirect()->route('Vehicle.vehicle');
+    }
+
 }

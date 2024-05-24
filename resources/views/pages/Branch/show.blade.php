@@ -17,9 +17,14 @@
                 <div class="col-6">
                     <h3>Automezzi:</h3>
                     {{--CICLO GLI AUTOMEZZI PER OGNI FILIALE  --}}
-                    @foreach ($branches->vehicles as $vehicle)
-                        <h6>{{$vehicle->model}}</h6>
-                    @endforeach
+                    @if (count($branches->vehicles) > 0)
+                        @foreach ($branches->vehicles as $vehicle)
+                            <h6>{{$vehicle->model}}</h6>
+                        @endforeach
+                    @else
+                        <h6 class="text-danger">Non ci sono veicoli associati</h6>
+                    @endif
+
                 </div>
                 <div class="col-6">
                     <h3>Filiale:</h3>

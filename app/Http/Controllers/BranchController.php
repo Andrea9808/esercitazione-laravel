@@ -47,4 +47,12 @@ class BranchController extends Controller
         return redirect()->route('Branch.branch');
     }
 
+    //DELETE
+    public function destroy($id){
+        $branch = Branch::find($id);
+        $branch->vehicles()->delete();
+        $branch->delete();
+        return redirect()->route('Branch.branch');
+    }
+
 }
