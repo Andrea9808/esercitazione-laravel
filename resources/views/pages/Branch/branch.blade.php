@@ -7,6 +7,7 @@
 <div class="container-fluid bg-home-branches">
     <div class="container hv-100 d-flex align-items-center justify-content-center flex-column">
         <h1 class="mb-5">Tutte le nostre filiali</h1>
+        <p class="bg-black text-white">Clicca sulla card per vedere i dettagli</p>
 
         {{-- ROTTA PER LA CREATE --}}
         <a href="{{route('branch.create')}}">

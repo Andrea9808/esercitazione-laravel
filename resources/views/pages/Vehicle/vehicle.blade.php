@@ -7,6 +7,8 @@
 <div class="container-fluid bg-home-vehicles">
     <div class="container hv-100 d-flex align-items-center justify-content-center flex-column">
         <h1 class="mb-5">Tutti i nostri Automezzi</h1>
+        <p class="bg-black text-white">Clicca sulla card per vedere i dettagli</p>
+
 
         {{-- ROTTA PER LA CREATE --}}
         <a href="{{route('vehicle.create')}}">
