@@ -25,19 +25,19 @@
 
                         <div class="form-group">
                             <label class="label-style-create" for="code">Codice:</label>
-                            <input type="text" name="code" id="code" class="form-control" placeholder="Codice">
+                            <input type="text" name="code" required id="code" class="form-control" placeholder="Codice">
                         </div>
                         <div class="form-group">
                             <label class="label-style-create" for="plate">Targa:</label>
-                            <input type="text" name="plate" id="plate" class="form-control" placeholder="Targa">
+                            <input type="text" name="plate" required id="plate" class="form-control" placeholder="Targa">
                         </div>
                         <div class="form-group">
                             <label class="label-style-create" for="brand">Marca:</label>
-                            <input type="text" name="brand" id="brand" class="form-control" placeholder="Marca">
+                            <input type="text" name="brand" required id="brand" class="form-control" placeholder="Marca">
                         </div>
                         <div class="form-group">
                             <label class="label-style-create" for="model">Modello:</label>
-                            <input type="text" name="model" id="model" class="form-control" placeholder="Modello">
+                            <input type="text" name="model" required id="model" class="form-control" placeholder="Modello">
                         </div>
 
                         <div class="form-group">

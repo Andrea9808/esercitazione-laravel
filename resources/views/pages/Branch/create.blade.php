@@ -26,19 +26,19 @@
 
                             <div class="form-group">
                                 <label class="label-style-create" for="code">Codice:</label>
-                                <input type="text" name="code" id="code" class="form-control" placeholder="Codice">
+                                <input type="text" name="code" required id="code" class="form-control" placeholder="Codice">
                             </div>
                             <div class="form-group">
                                 <label class="label-style-create" for="address">Indirizzo:</label>
-                                <input type="text" name="address" id="address" class="form-control" placeholder="Indirizzo">
+                                <input type="text" name="address" required id="address" class="form-control" placeholder="Indirizzo">
                             </div>
                             <div class="form-group">
                                 <label class="label-style-create" for="city">Città:</label>
-                                <input type="text" name="city" id="city" class="form-control" placeholder="città">
+                                <input type="text" name="city" required id="city" class="form-control" placeholder="città">
                             </div>
                             <div class="form-group">
                                 <label class="label-style-create" for="postalCode">CAP:</label>
-                                <input type="text" name="postalCode" id="postalCode" class="form-control" placeholder="CAP">
+                                <input type="text" name="postalCode" required id="postalCode" class="form-control" placeholder="CAP">
                             </div>
 
                             <button type="submit" class="btn btn-success">Salva</button>
