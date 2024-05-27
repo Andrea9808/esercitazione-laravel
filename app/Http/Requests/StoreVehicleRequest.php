@@ -21,6 +21,8 @@ class StoreVehicleRequest extends FormRequest
      *
      * @return array<string, mixed>
      */
+
+    // VALIDATION RULES
     public function rules()
     {
         return [

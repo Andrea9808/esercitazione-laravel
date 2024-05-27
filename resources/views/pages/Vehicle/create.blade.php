@@ -18,6 +18,8 @@
         <div class="row align-items-center">
             <div class="col-12 col-md-6 slide-in-from-left">
                 <div class=" form-bg">
+
+                    {{-- ROTTA PER LO STORE --}}
                     <form  action="{{route('vehicle.store')}}" method="POST">
 
                         @csrf
